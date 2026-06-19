@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDG 6 - Clean Water & Sanitation</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💧 SDG 6</div>
+    <nav>
+        <a href="#" onclick="goHome()">Home</a> 
+    </nav>
+</header>
+
+<button id="menuBtn" onclick="toggleSidebar()">
+☰ Contents
+</button>
+
+<div id="sidebar">
+
+<h3>📚 Contents</h3>
+
+<a href="#" onclick="showTab('targets')">🎯 Goals</a>
+
+<a href="#" onclick="showTab('statistics')">🌍 Statistics</a>
+
+<a href="#" onclick="showTab('pollution')">☠ Pollution</a>
+
+<a href="#" onclick="showTab('solutions')">💡 Solutions</a>
+
+<a href="#" onclick="showTab('aquavision')">🤖 AquaBot</a>
+
+<a href="#" onclick="showTab('survey')">📸 Survey</a>
+
+<a href="#" onclick="showTab('watermap')">🗺 Water Map</a>
+
+<a href="#" onclick="showTab('calculator')">🧮 Calculator</a>
+
+<a href="#" onclick="showTab('video')">🎥 Video</a>
+
+<a href="#" onclick="showTab('pledge')">🤝 Pledge</a>
+
+<a href="#" onclick="showTab('contact')">📞 Contact</a>
+
+</div>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>💧 Clean Water For Everyone</h1>
+        <p>Supporting Sustainable Development Goal 6</p>
+        <button id="loginBtn" onclick="openLogin()">
+            Login
+        </button>
+
+        <button id="learnBtn" onclick="startWebsite()" style="display:none;">
+            Learn More
+        </button>
+        <br><br>
+    </div>
+</section>
+
+<section id="targets" class="hidden-section">
+
+
+    <div class="goals-container">
+
+            <div class="goals-heading">
+
+                <h1>💧 SDG 6: Clean Water and Sanitation</h1>
+
+                <p>
+                Sustainable Development Goal 6 aims to ensure the availability and sustainable management of water and sanitation for all.
+                </p>
+
+            </div>
+
+            <div class="goals-grid">
+
+                <div class="goal-card">
+                <h2>🎯 Goal of SDG 6</h2>
+                <p>
+                SDG 6 focuses on providing universal access to safe drinking water, improving sanitation services, reducing pollution, and promoting sustainable water management.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🌍 Why Clean Water Matters</h2>
+                <p>
+                Clean water is necessary for drinking, cooking, agriculture, and industry.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🚰 Importance of Safe Drinking Water</h2>
+                <p>
+                Safe drinking water prevents diseases and improves public health.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🚽 Sanitation for Everyone</h2>
+                <p>
+                Proper sanitation facilities help prevent the spread of diseases.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🌱 Protecting Water Ecosystems</h2>
+                <p>
+                Rivers, lakes, wetlands, and groundwater systems support biodiversity.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🏫 Water and Education</h2>
+                <p>
+                Children with access to clean water are more likely to attend school regularly.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🏥 Water and Health</h2>
+                <p>
+                Contaminated water can spread diseases such as cholera and typhoid.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🌧 Sustainable Water Management</h2>
+                <p>
+                Efficient water use and rainwater harvesting help reduce scarcity.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>♻ Water Conservation</h2>
+                <p>
+                Fixing leaks and reducing wastage can save thousands of liters annually.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🤝 Community Participation</h2>
+                <p>
+                Public awareness campaigns and responsible water use help protect resources.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>💡 Innovation and Technology</h2>
+                <p>
+                Smart monitoring systems and AI-based solutions improve water management.
+                </p>
+                </div>
+
+                <div class="goal-card">
+                <h2>🔮 Future Vision</h2>
+                <p>
+                A world where everyone has access to safe water and sanitation.
+                </p>
+                </div>
+
+            </div>
+
+        <div class="goals-highlight">
+
+            <h2>🌎 Together for a Sustainable Future</h2>
+
+            <p>
+            Every drop of water matters. By conserving water and preventing pollution, we can help achieve SDG 6.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="statistics" class="hidden-section">
+    <h2 class="section-title">🌍 Global Water Statistics</h2>
+    <br><br>
+    <div class="stats-container">
+
+        <div class="stats-heading">
+            <p>
+            Sustainable Development Goal 6 focuses on ensuring the availability and sustainable management of clean water and sanitation for everyone.
+            </p>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stats-card">
+                <h2>🌍 Access to Safe Water</h2>
+                <div class="stats-number">2.2 Billion</div>
+                <p>Approximately 2.2 billion people around the world still do not have access to safely managed drinking water services.</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>🚽 Sanitation Crisis</h2>
+                <div class="stats-number">3.5 Billion</div>
+                <p>More than 3.5 billion people lack access to safely managed sanitation facilities.</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>♻ Wastewater</h2>
+                <div class="stats-number">80%</div>
+                <p>Nearly 80% of wastewater worldwide is released back into the environment without proper treatment.</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>🏥 Health Impact</h2>
+                <div class="stats-number">443 Million</div>
+                <p>Approximately 443 million school days are lost annually due to water-related illnesses.</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>🌧 Water Scarcity</h2>
+                <div class="stats-number">700 Million</div>
+                <p>By 2030, around 700 million people could be displaced due to severe water scarcity.</p>
+            </div>
+
+            <div class="stats-card">
+                <h2>💡 Water Conservation</h2>
+                <div class="stats-number">Thousands of Liters</div>
+                <p>A single leaking tap can waste thousands of liters of water every year.</p>
+            </div>
+
+        </div>
+        <br><br>
+        <br><br>
+
+        <h2 class="section-title">Water Crisis Facts</h2>
+
+        <br><br>
+    <div class="cards">
+
+        <div class="card">
+            <h3>🚰 Water Scarcity</h3>
+            <p>Billions of people around the world still lack access to safe drinking water.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Global Challenge</h3>
+            <p>Water shortages affect health, education, agriculture, and economic growth.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏥 Health Impact</h3>
+            <p>Unsafe water causes diseases that affect millions of people every year.</p>
+        </div>
+
+    </div>
+
+
+        <div class="facts-section">
+
+            <h1 class="facts-title">
+            📚 Interesting Facts About Clean Water & Sanitation
+            </h1>
+
+            <div class="fact-card">
+            <h3>💧 Fact 1</h3>
+            <p>Only about 1% of Earth's water is readily available for human use.</p>
+            </div>
+
+            <div class="fact-card">
+            <h3>🌎 Fact 2</h3>
+            <p>Clean water is essential for drinking, agriculture, sanitation, and economic development.</p>
+            </div>
+
+            <div class="fact-card">
+            <h3>🐟 Fact 3</h3>
+            <p>Water pollution threatens aquatic ecosystems and biodiversity.</p>
+            </div>
+
+            <div class="fact-card">
+            <h3>🌱 Fact 4</h3>
+            <p>Rainwater harvesting helps recharge groundwater levels.</p>
+            </div>
+
+            <div class="fact-card">
+            <h3>🏫 Fact 5</h3>
+            <p>Access to clean water improves school attendance and education outcomes.</p>
+            </div>
+
+            <div class="fact-card">
+            <h3>♻ Fact 6</h3>
+            <p>Treating and reusing wastewater helps reduce water shortages.</p>
+            </div>
+
+        </div>
+
+        <div class="stats-quote">
+            <h2>🌍 Why SDG 6 Matters</h2>
+
+            <p>
+            Clean water and sanitation are fundamental human rights that improve health, protect the environment, and support sustainable development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="pollution" class="hidden-section">
+    <h2 class="section-title">☠️ Water Pollution</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="openIndustrial()">
+            <h3>🏭 Industrial Waste</h3>
+            <p>
+                Factories often release harmful chemicals into rivers and lakes,
+                making water unsafe for humans and animals.
+            </p>
+            <br>
+            <p style="text-align:center;">click to see</p>
+        </div>
+
+        <div class="card" onclick="openPlastic()">
+            <h3>🗑 Plastic Pollution</h3>
+            <p>
+                Plastic waste pollutes oceans and waterways, affecting marine life
+                and water quality.
+            </p>
+            <br>
+            <p style="text-align:center;">click to see</p>
+        </div>
+
+        <div class="card" onclick="openHealth()">
+            <h3>🚱 Health Risks</h3>
+            <p>
+                Polluted water spreads diseases such as cholera, typhoid,
+                and diarrhea.
+            </p>
+            <br>
+            <p style="text-align:center;">click to see</p>
+        </div>
+
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="pollution-container">
+
+        <h1 style = "text-align : center;">🌊 Water Pollution Awareness</h1>
+
+        <br><br>
+        <p class="pollution-intro">
+        Water pollution is one of the most serious environmental challenges facing the world today. It affects human health, aquatic life, agriculture, and the overall balance of ecosystems. Protecting water resources is essential for a sustainable future.
+        </p>
+
+        <div class="pollution-card">
+
+            <h2>⚠ Causes of Water Pollution</h2>
+
+            <ul>
+            <li><b>Industrial Waste:</b> Factories release harmful chemicals and toxic substances into rivers and lakes.</li>
+            <li><b>Sewage Disposal:</b> Untreated wastewater from homes and communities contaminates water sources.</li>
+            <li><b>Agricultural Runoff:</b> Fertilizers and pesticides are washed into water bodies during rainfall.</li>
+            <li><b>Plastic Waste:</b> Plastic bottles, bags, and other waste pollute rivers, lakes, and oceans.</li>
+            <li><b>Oil Spills:</b> Oil leakage from ships and industries damages marine ecosystems.</li>
+            <li><b>Household Chemicals:</b> Improper disposal of detergents, paints, and medicines affects water quality.</li>
+            </ul>
+
+        </div>
+
+        <div class="pollution-card">
+
+            <h2>🚨 Effects of Water Pollution</h2>
+
+            <ul>
+            <li>Spread of diseases such as cholera, typhoid, and diarrhea.</li>
+            <li>Death of fish and aquatic organisms.</li>
+            <li>Reduction in biodiversity and ecosystem balance.</li>
+            <li>Contamination of drinking water sources.</li>
+            <li>Negative impact on agriculture and food production.</li>
+            <li>Economic losses in fishing and tourism industries.</li>
+            </ul>
+
+        </div>
+
+        <div class="pollution-card">
+
+            <h2>✅ How to Prevent Water Pollution</h2>
+
+            <ul>
+            <li>Treat sewage and wastewater before releasing it into water bodies.</li>
+            <li>Reduce the use of chemical fertilizers and pesticides.</li>
+            <li>Avoid throwing plastic waste into rivers, lakes, and oceans.</li>
+            <li>Practice proper waste segregation and recycling.</li>
+            <li>Use eco-friendly cleaning products.</li>
+            <li>Promote rainwater harvesting and water conservation.</li>
+            <li>Conduct awareness programs in schools and communities.</li>
+            <li>Support industries in adopting sustainable waste management systems.</li>
+            </ul>
+
+        </div>
+
+        <div class="pollution-card">
+
+            <h2>💡 Our Responsibility</h2>
+
+            <p>
+            Every individual can contribute to protecting water resources by conserving water, reducing plastic usage, disposing of waste responsibly, and participating in environmental awareness programs.
+            </p>
+
+        </div>
+
+        <div class="pollution-highlight">
+            🌍 "Clean Water is a Basic Human Right. Protect Every Drop for a Better Tomorrow."
+        </div>
+    </div>
+</section>
+
+<section id="solutions" class="hidden-section">
+    <h2 class="section-title">Solutions</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="openSaveWater()">
+            <h3>💧 Save Water</h3>
+            <p>Click to learn more</p>
+        </div>
+
+        <div class="card" onclick="openRain()">
+            <h3>🌧 Rainwater Harvesting</h3>
+            <p>Click to learn more</p>
+        </div>
+
+        <div class="card" onclick="openReuse()">
+            <h3>♻ Reuse Water</h3>
+            <p>Click to learn more</p>
+        </div>
+
+        <div class="card" onclick="openAwareness()">
+            <h3>📚 Spread Awareness</h3>
+            
+            <p>Click to learn more</p>
+        </div>
+    </div>
+</section>
+
+<section id="aquavision" class="hidden-section">
+
+<h2>💧 AquaVision - The Journey of Every Drop</h2>
+
+<div class="aqua-hero">
+
+<div class="aqua-content">
+<h1>💧 AquaVision</h1>
+<h2>The Journey of Every Drop</h2>
+
+<br>
+
+<p id="storyText">
+Every drop begins its journey from the sky...
+</p>
+
+</div>
+
+</div>
+
+<h2>🌊 Water Journey Simulation</h2>
+
+<div class="aqua-card-container">
+
+<div class="aqua-card">
+<h3>☁ Rainfall</h3>
+<p>Water begins as rain from clouds.</p>
+</div>
+
+<div class="aqua-card">
+<h3>🌧 Collection</h3>
+<p>Stored in rivers, lakes and reservoirs.</p>
+</div>
+
+<div class="aqua-card">
+<h3>🏭 Treatment</h3>
+<p>Purified to become safe drinking water.</p>
+</div>
+
+<div class="aqua-card">
+<h3>🏠 Household Use</h3>
+<p>Used for drinking, cooking and hygiene.</p>
+</div>
+
+<div class="aqua-card">
+<h3>♻ Wastewater Treatment</h3>
+<p>Used water is cleaned and recycled.</p>
+</div>
+
+<div class="aqua-card">
+<h3>🌱 Conservation</h3>
+<p>Rainwater harvesting secures the future.</p>
+</div>
+
+</div>
+
+<h2 style="margin-top:60px;">📊 Live Water Dashboard</h2>
+
+<div class="aqua-stats">
+
+<div class="aqua-stat">
+<h3>💧 Water Saved</h3>
+<div id="water" class="counter">0</div>
+</div>
+
+<div class="aqua-stat">
+<h3>🌧 Rainwater Harvested</h3>
+<div id="rain" class="counter">0</div>
+</div>
+
+<div class="aqua-stat">
+<h3>🌍 SDG 6 Score</h3>
+<div class="counter">92/100</div>
+</div>
+
+</div>
+
+<h2 style="margin-top:60px;">🔮 Future Prediction</h2>
+
+<div class="future">
+
+<div class="aqua-future-box aqua-bad">
+<h3>❌ Without Conservation</h3>
+<br>
+<p>Water Scarcity</p>
+<p>Dry Lakes</p>
+<p>Poor Sanitation</p>
+<p>Groundwater Depletion</p>
+</div>
+<br><br>
+
+<div class="aqua-future-box aqua-good">
+<h3>✅ With AquaVision</h3>
+<br>
+<p>Rainwater Harvesting</p>
+<p>Clean Water Access</p>
+<p>Healthy Communities</p>
+<p>Sustainable Future</p>
+</div>
+
+</div>
+<br><br>
+
+<button class="chatbot" onclick="toggleBot()">
+🤖 AquaBot
+</button>
+
+
+</section>
+
+<section id="survey" class="hidden-section">
+
+<h2 class="section-title">📸 Our Survey Activities</h2>
+
+<div class="cards">
+
+<div class="card" onclick="openSurvey()">
+
+<h3>📸 Survey Gallery</h3>
+
+<p>Click to view survey photos</p>
+
+</div>
+
+</div>
+<br> <br>
+
+    <h2 class="section-title">📊 Survey Findings</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>85%</h3>
+            <p>People know the importance of saving water.</p>
+        </div>
+
+        <div class="card">
+            <h3>60%</h3>
+            <p>Households reported water wastage issues.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="watermap" class="hidden-section">
+
+<h2 class="section-title">🗺 Water Facilities Map</h2>
+
+<p style="text-align:center;margin-bottom:20px;">
+View water facilities and quality status in different locations.
+</p>
+
+<div id="waterMap"></div>
+
+</section>
+
+<section id="calculator" class="hidden-section">
+    <div id="calculator" class="tab-content">
+
+        <h1 class="section-title">💧 Water Calculator</h1>
+        <div class="section-line"></div>
+
+        <label>🚿 Showers per day: (1 shower uses 30L) </label>
+        <input type="number" id="shower" min="0" value="0">
+
+        <label>🪥Brushes per day: (1 time brush consume 2L) </label>
+        <input type="number" id="brush" min="0" value="0">
+
+        <label>👕 Clothes Wash Loads: (1 wash uses 50L) </label>
+        <input type="number" id="clothes" min="0" value="0">
+
+        <label>🍽️ Dish Washing Times: (1 wash uses 20L) </label>
+        <input type="number" id="dishes" min="0" value="0">
+
+        <label>🍳 Cooking & Drinking (Litres)</label>
+        <input type="number" id="cooking" min="0" value="0">
+
+        <label>🚽 Toilet Flushes: (1 flush uses 5L) </label>
+        <input type="number" id="flush" min="0" value="0">
+
+        <label>Others : (uses 5L) </label>
+        <input type="number" id="others" min="1" value="1">
+
+        <button onclick="calculateWater()">Calculate</button>
+
+        <h3 id="waterResult"></h3>
+
+    </div>
+
+    <div class="info-section">
+
+</div>
+
+    <div class="features-container">
+
+    <div class="info-section">
+        <h2>🌱 Benefits of Water Conservation</h2>
+        <ul>
+            <p>✔ Preserves freshwater resources for future generations.</p>
+            <p>✔ Reduces pressure on water treatment facilities.</p>
+            <p>✔ Protects rivers, lakes, and groundwater sources.</p>
+            <p>✔ Lowers household water bills.</p>
+            <p>✔ Supports environmental sustainability and biodiversity.</p>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>💡 Simple Water Saving Tips</h2>
+        <ul>
+            <p>🚿 Take shorter showers whenever possible.</p>
+            <p>🔧 Fix leaking taps and pipes immediately.</p>
+            <p>🪣 Use a bucket instead of a hose for cleaning.</p>
+            <p>🌧 Collect rainwater for gardening and outdoor use.</p>
+            <p>🚰 Turn off the tap while brushing your teeth.</p>
+            <p>♻ Reuse water where appropriate and safe.</p>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>📈 Why Monitor Daily Water Usage?</h2>
+        <p>
+            Tracking daily water consumption helps individuals and families understand
+            their water usage habits. Regular monitoring encourages responsible water
+            management, reduces wastage, and promotes sustainable living practices.
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h2>🌍 Global Water Facts</h2>
+        <ul>
+            <p>💧 Freshwater accounts for less than 3% of Earth's total water.</p>
+            <p>🌎 Millions of people still face water scarcity every year.</p>
+            <p>🚰 Safe drinking water is a basic human necessity.</p>
+            <p>♻ Water conservation helps combat climate-related challenges.</p>
+            <p>📊 Responsible water usage supports sustainable communities.</p>
+        </ul>
+    </div>
+
+    </div>
+</section>
+
+<section id="video" class="hidden-section">
+
+<h2 class="section-title">🎥 Awareness Video</h2>
+
+<iframe width="100%" height="500"
+src="https://www.youtube.com/embed/jpnrVtAqV3Q"
+title="Water Conservation">
+</iframe>
+
+</section>
+
+<section id="pledge" class="hidden-section">
+    <h2 class="section-title">💧 Take the Water Pledge</h2>
+
+    <div class="card" style="max-width:700px;margin:auto;text-align:center;">
+        <p style="text-align:justify;line-height:1.8;font-size:18px;">
+            "I pledge to save water and use it wisely. I will avoid wasting water,
+            keep water sources clean, and encourage others to conserve this precious
+            resource. I understand that every drop is valuable and essential for life.
+            Together, we can protect water for future generations and build a healthier,
+            sustainable world."
+        </p>
+
+        <br>
+
+        <button onclick="takePledge()">Take Pledge</button>
+
+        <h3 id="pledgeMessage" style="margin-top:20px;color:#0077b6;"></h3>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title" style="color:white;">
+        📞 Contact & Report Issues
+    </h2>
+
+    <div class="card" style="color:black;">
+        <p>
+            Have suggestions, questions, or ideas about water conservation?
+            We'd love to hear from you.
+        </p>
+
+        <p><strong>Email:</strong> waterawareness@gmail.com</p>
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+    </div>
+
+    <!-- Contact Form -->
+
+    <form>
+        <h3>✉️ Send Message</h3>
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <br><br>
+
+    <!-- Water Issue Reporting -->
+
+    <div class="report-section">
+
+        <h3>🚨 Report Water Issue</h3>
+        <input type="text" id="reportName" placeholder="Your Name" required>
+
+        <input type="email" id="reportEmail" placeholder="Your Email" required>
+
+        <select id="issueType" required>
+            <option value="">Select Issue Type</option>
+            <option>Water Leakage</option>
+            <option>Contaminated Water</option>
+            <option>Drainage Blockage</option>
+            <option>Overflowing Tank</option>
+            <option>Broken Pipeline</option>
+        </select>
+
+        <textarea id="issueDesc"
+        placeholder="Describe the issue..."
+        rows="4"></textarea>
+
+        <button type="button"
+            onclick="document.getElementById('gallery').click()">
+            📁 Upload from Gallery
+        </button>
+
+        <input type="file"
+            id="gallery"
+            accept="image/*"
+            hidden>
+
+        <br><br>
+
+        <button type="button"
+            onclick="document.getElementById('camera').click()">
+            📸 Open Camera
+        </button>
+
+        <input type="file"
+            id="camera"
+            accept="image/*"
+            capture="environment"
+            hidden>
+
+        <br><br>
+
+        <img id="preview"
+            style="display:none;width:250px;border-radius:10px;">
+
+        <br><br>
+
+        <input type="text"
+        id="reportLocation"
+        placeholder="Location">
+
+        <button type="submit" onclick="submitReport()">
+            Submit Report
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>SDG 6: Clean Water & Sanitation | Every Drop Counts 💙</p>
+</footer>
+
+<div id="popup" class="modal">
+<div class="modal-content">
+
+<span class="close" onclick="closePopup()">×</span>
+
+<h2 id="popupTitle"></h2>
+
+<div id="popupBody"></div>
+
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+<div id="loginPopup" class="login-popup">
+
+    <div class="login-box">
+
+        <span class="close-btn" onclick="closeLogin()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="loginUser()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+</body>
+</html>
